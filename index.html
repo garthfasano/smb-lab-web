@@ -220,6 +220,10 @@ body{margin:0;background:var(--bg)}
 @media (max-width:900px){.car .seg{flex:1 1 30%}}
 @media (max-width:1100px){.outs{grid-template-columns:1fr 1fr}}
 @media (max-width:900px){.outs,.wins,.ladder{grid-template-columns:1fr}.wins{gap:28px}.ladder>div{border-right:none;border-bottom:1px solid var(--line)}.ladder>div:last-child{border-bottom:none}.caps>summary{padding:22px 20px}}
+/* Hero headline: two lines at every width, as big as the page allows (Bebas Neue: line 2 is ~8.2em wide) */
+.hero-h1{font-size:calc((100vw - 40px) / 8.5)}
+.hero-h1 span,.hero-h1 em{display:block;white-space:nowrap}
+@media (min-width:901px){.hero-h1{font-size:min(112px,calc((min(100vw,1200px) - 96px) / 8.5))}}
 </style>
 <style>html{scroll-behavior:smooth}</style>
 </head>
@@ -249,10 +253,10 @@ body{margin:0;background:var(--bg)}
 <!-- HERO -->
 <section id="top" style="padding:96px 0 0">
   <div class="wrap">
-    <div class="two" style="display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center">
+    <p class="label">For home service businesses</p>
+    <h1 class="bebas hero-h1" style="margin:0 0 40px;line-height:.92;letter-spacing:.01em"><span>The Sales Team</span> <em style="font-style:normal;color:var(--orange)">Behind Your Sales Team.</em></h1>
+    <div class="two" style="display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start">
       <div>
-        <p class="label">For home service businesses</p>
-        <h1 class="bebas" style="margin:0 0 22px;font-size:clamp(60px,7.6vw,112px);line-height:.92;letter-spacing:.01em">The Sales Team<br><em style="font-style:normal;color:var(--orange)">Behind Your<br>Sales Team.</em></h1>
         <p class="bebas" style="margin:0 0 22px;font-size:clamp(26px,2.6vw,34px);line-height:1.1;letter-spacing:.04em">More customers. Better follow-up. Less management.</p>
         <p style="margin:0 0 18px;font-size:18px;color:rgba(var(--ink),.62);max-width:560px;line-height:1.8">SMB Lab gives your business an AI sales assistant that works every day to keep leads moving, help your people close more deals, and make sure nothing falls through the cracks.</p>
         <p style="margin:0 0 40px;font-size:18px;color:rgba(var(--ink),.62);max-width:560px;line-height:1.8">It doesn't replace your salesperson. It makes your salesperson, and you, a lot more effective.</p>
