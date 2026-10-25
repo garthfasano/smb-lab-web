@@ -125,21 +125,22 @@ td:first-child{font-weight:500;color:var(--fg);white-space:nowrap;padding-right:
 </ul>
 
 <h2 id="google">5. Google user data</h2>
-<p>Customers can connect a Google account so their agents can send email from Gmail and work with Google Calendar. This section explains exactly what we access and how we treat it.</p>
+<p>Customers can connect a Google account so their agents can send email from Gmail, bring in new leads from a Google Sheet they choose, and work with Google Calendar. This section explains exactly what we access and how we treat it.</p>
 <h3>What we access</h3>
 <ul>
 <li><b>Gmail, send only.</b> We request permission only to send email on your behalf. We use it to send the follow-ups and other emails you approve or allow your agents to send, from your own address, with a copy (BCC) to the CRM logging address you provide. We do not request access to read, search or delete your email.</li>
+<li><b>Google Sheets you pick, read only.</b> If you connect a Google Sheet to the Lead intake agent, you choose the file in Google's file picker. We can open only the files you pick there, not the rest of your Google Drive. We read that sheet's tabs and rows, and check whether the file has changed, so new rows can be added to your CRM as leads. We never edit, move or delete your sheet.</li>
 <li><b>Google Calendar.</b> We read your calendars' events and free/busy times to check availability and avoid conflicts, and we create or update events when you or your agents book or change appointments.</li>
 <li><b>Basic account information.</b> Your name and email address, to identify which Google account is connected.</li>
 </ul>
 <h3>How we use it</h3>
-<p>We use Google user data only to provide and improve the user-facing features you've turned on: sending your emails, checking availability, and booking appointments. We don't use it for advertising, we don't sell it, and we don't use it to develop, improve or train generalized AI or machine learning models.</p>
+<p>We use Google user data only to provide and improve the user-facing features you've turned on: sending your emails, adding new leads from the sheet you picked to your CRM, checking availability, and booking appointments. We don't use it for advertising, we don't sell it, and we don't use it to develop, improve or train generalized AI or machine learning models.</p>
 <h3>How we share it</h3>
 <p>We don't share Google user data with third parties, except: with the AI providers described in Section 4, only as needed to perform the feature you requested (for example, checking calendar availability to suggest appointment times); with our hosting provider, which stores it for us; when you direct us to (for example, the BCC copy to your CRM); to comply with law; or as part of a merger or acquisition, with notice to you.</p>
 <h3>Human access</h3>
 <p>Our team doesn't read your Google user data unless you give us permission for a specific message or event (for example, for a support request), it's needed for security purposes such as investigating abuse, it's required by law, or the data has been aggregated and anonymized for internal operations.</p>
 <h3>Storage and deletion</h3>
-<p>Google access tokens are stored encrypted. Calendar information is cached only as long as needed to provide scheduling features. We keep records of emails we sent for you (such as recipient, subject, body and send time) in your account history so you can see what your agents did. You can revoke our access at any time in the client portal or from your Google Account permissions page (<a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>). To have all Google user data we hold deleted, email <a href="mailto:support@joinsmblab.com">support@joinsmblab.com</a>; we'll delete it within 30 days.</p>
+<p>Google access tokens are stored encrypted. Calendar information is cached only as long as needed to provide scheduling features. Rows we read from a sheet you picked are kept for 30 days for troubleshooting and then deleted; the lead record created in your CRM stays in your CRM. We keep records of emails we sent for you (such as recipient, subject, body and send time) in your account history so you can see what your agents did. You can revoke our access at any time in the client portal or from your Google Account permissions page (<a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>). To have all Google user data we hold deleted, email <a href="mailto:support@joinsmblab.com">support@joinsmblab.com</a>; we'll delete it within 30 days.</p>
 <p class="callout"><b>Limited Use.</b> SMB Lab's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
 <h2 id="microsoft">6. Microsoft (Outlook) data</h2>
