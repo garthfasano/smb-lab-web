@@ -215,5 +215,20 @@ td:first-child{font-weight:500;color:var(--fg);white-space:nowrap;padding-right:
   </div>
 </footer>
 <script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var r=document.documentElement,cur=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'),next=cur==='dark'?'light':'dark';r.setAttribute('data-theme',next);try{localStorage.setItem('theme',next)}catch(e){}})})</script>
+<script>
+/* Staging and preview copies of this site (anything not joinsmblab.com): point "Client login" at the
+   staging portal and show a bar, so nobody tests against production by accident. */
+(function () {
+  var h = location.hostname;
+  if (h === "joinsmblab.com" || h === "www.joinsmblab.com") return;
+  document.querySelectorAll('a[href^="https://app.joinsmblab.com"]').forEach(function (a) {
+    a.href = a.href.replace("https://app.joinsmblab.com", "https://staging.joinsmblab.com");
+  });
+  var bar = document.createElement("div");
+  bar.textContent = "Staging copy of joinsmblab.com. Client login goes to the staging portal.";
+  bar.style.cssText = "position:fixed;left:0;right:0;bottom:0;z-index:9999;padding:6px 12px;background:#f5c518;color:#1e1912;font:600 13px/1.4 system-ui,sans-serif;text-align:center";
+  document.body.appendChild(bar);
+})();
+</script>
 </body>
 </html>
