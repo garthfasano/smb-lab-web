@@ -1,0 +1,3 @@
+# Send the www host to the main domain so Google sees one version of each page
+https://www.joinsmblab.com/*  https://joinsmblab.com/:splat  301!
+http://www.joinsmblab.com/*   https://joinsmblab.com/:splat  301!
