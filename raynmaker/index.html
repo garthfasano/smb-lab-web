@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f2ede4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16120d" media="(prefers-color-scheme: dark)">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMB Lab × Raynmaker · Partner program for franchisors &amp; agencies</title>
+<meta name="description" content="Raynmaker and SMB Lab: a white-labeled AI sales team behind every location and every client you serve.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="canonical" href="https://joinsmblab.com/raynmaker/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%231e1912%22/%3E%3Cpath%20fill%3D%22%23f2ede4%22%20transform%3D%22translate%2811.50%2052.42%29%20scale%280.05833%20-0.05833%29%22%20d%3D%22M22%20166V206H126V158Q126%2090%20183%2090Q211%2090%20225.5%20106.5Q240%20123%20240%20160Q240%20204%20220.0%20237.5Q200%20271%20146%20318Q78%20378%2051.0%20426.5Q24%20475%2024%20536Q24%20619%2066.0%20664.5Q108%20710%20188%20710Q267%20710%20307.5%20664.5Q348%20619%20348%20534V505H244V541Q244%20577%20230.0%20593.5Q216%20610%20189%20610Q134%20610%20134%20543Q134%20505%20154.5%20472.0Q175%20439%20229%20392Q298%20332%20324.0%20283.0Q350%20234%20350%20168Q350%2082%20307.5%2036.0Q265%20-10%20184%20-10Q104%20-10%2063.0%2035.5Q22%2081%2022%20166Z%22/%3E%3Cpath%20fill%3D%22%23d9531a%22%20transform%3D%22translate%2831.85%2052.42%29%20scale%280.05833%20-0.05833%29%22%20d%3D%22M41%20700H151V100H332V0H41Z%22/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADkklEQVRYhcWWy09cVRzHP+fOq51Hh840pVgYsDPggAhJSaz/gIAJrmxCykIWJiVdVNd0I1KMxWKA1hojUpNCkzLxsRhMrBsXVTApbbVNM0HaODTSGRedhzNAmddxMfaWCVwlDkx/q9/jnPv9nN895+QI/jGPB1NqxdkjkF1S0ghY2E4TxEHeFFJcWAxFvnqaBiornQdFVn4roHlbRbVMMmW0Rrrv3WNN5/Fgyq7t/qFk4gCCxmza/Hw8ufq1cD3nfBspR0smvp5Dyg6d3br7HHDwmQAI4dADDf82SFEUWloO4/V6MRqNhMJhZmdmiUaj6phDZgWDIgFYegzJjNwSgIRX9IBVa0DFgQOcOz9KfX19QX5lZYX+0wNM+6cBOF1vYL9JANA/n+bao+yWAIAyRasihGB4ZHiDOIDZbGagv5+6utqtCmmaJkBLy2EaG19UY79/mpGRUUIPHwKgN+jp7OwsGkCvVWhufnoqA4EAvb2nAPhtYYFPLnwMQFPTS0UDaHbAZrOpfigcVv3F34OqX7Z3b9EAmh1Yv8vdbjdCCKSURKJRhodHgPxm3DGAQCCg+tUuF62tr3L16vckEgnGxy8WLfzENH/B9etzLD54oMbv9fXxQl3dtgn/J4CUkr53+8hm82faarNy8YvxgpOxowCQ78LZs0NqbLfb+XxsrOCE7CgAwOTkZc6cGUTK/PVqtVkZ++xTvF5vaQCeQAwMvE8ulwPAbLEwOPgBu0ym0gAATE35GBr6SI3dbjcdr3eUDgDg0qUJ5uZuqHFbW+vOAfT0HMfnu4LPd4XX2tvVvN/vV31XVVXRAJoXUXl5OQ0N+aeCc59TzYfXXcu2PXuKBtDsQCweV/3q6mrVr1q36mgsVjSAZgfu/Hpb9Y8efYNUKsXy8jJdXcfU/K2btzbMO1app31/4brmYjm+CW3+SNEEuPbTjwSDQWpqajAYDHR3v1lQz6QzTExMbphXaxFg0RXkImmAzQE0f0EmneHkyXcIBoMbaslEkt7eU8zPz2tN37IJV4UjDmjuJr1ez5EjL+PxeNDp9Cwt/cHMzCyJREIdc8isYNRpfQGiKcmfa5s+VP8SrgrHd0Db/15CESYFPytCyvPPQhxAQVzWxZOPF+w2cy3QVGL9X2yOyAkFwGh59BaSqVKK53Si4+5dUjqASIRsPLn6ZZnNfAfJPgQOYNc2iyaR3BCK+NDmiJy4f381BvA3OSAlcuBnjaUAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+
+:root{color-scheme:light}@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#16120d;--bg-rgb:22,18,13;--fg:#f2ede4;--ink:242,237,228;--panel:#2a231b;--panel-rgb:42,35,27;--cream-dk:#1e1912;--orange:#e2692f;--orange-dk:#f08a58;--on-orange:#1e1912;--muted:#a89b86;color-scheme:dark}}:root[data-theme=dark]{--bg:#16120d;--bg-rgb:22,18,13;--fg:#f2ede4;--ink:242,237,228;--panel:#2a231b;--panel-rgb:42,35,27;--cream-dk:#1e1912;--orange:#e2692f;--orange-dk:#f08a58;--on-orange:#1e1912;--muted:#a89b86;color-scheme:dark}.theme-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 -8px;background:none;border:0;border-radius:50%;color:var(--fg);cursor:pointer;opacity:.7}.theme-btn:hover{opacity:1;background:rgba(var(--ink),.07)}.theme-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.theme-btn .sun{display:none}:root[data-theme=dark] .theme-btn .sun{display:block}:root[data-theme=dark] .theme-btn .moon{display:none}@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .theme-btn .sun{display:block}:root:not([data-theme=light]) .theme-btn .moon{display:none}}
+
+:root{--cream:#f2ede4;--cream-dk:#e4ddd2;--dark:#1e1912;--orange:#b5440f;--orange-dk:#8f3209;--muted:#8a7e6e;--line:rgba(var(--ink),.14);--line-soft:rgba(var(--ink),.09);--bg:#f2ede4;--bg-rgb:242,237,228;--fg:#1e1912;--ink:30,25,18;--panel:#1e1912;--panel-rgb:30,25,18;--on-orange:#f2ede4}
+body{margin:0;background:var(--bg)}
+.sl{font-family:'DM Sans',system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;color:var(--fg);background:var(--bg);-webkit-font-smoothing:antialiased}
+.sl *{box-sizing:border-box}
+.sl a{color:inherit}
+.bebas{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.02em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 48px}
+.sec{padding:104px 0}
+.label{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin:0 0 18px}
+.label::before{content:'';width:28px;height:1px;background:var(--orange)}
+.h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(44px,5vw,64px);line-height:1;letter-spacing:.02em;margin:0 0 22px}
+.h2 em{font-style:normal;color:var(--orange)}
+.intro{font-size:18px;color:rgba(var(--ink),.62);max-width:560px;margin:0}
+.btn{display:inline-flex;align-items:center;min-height:48px;background:var(--orange);color:var(--on-orange) !important;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:16px 34px;border-radius:4px;box-shadow:0 4px 18px rgba(181,68,15,.35);transition:background .2s,transform .15s}
+.btn:hover{background:var(--orange-dk);transform:translateY(-2px)}
+.ghost{display:inline-flex;align-items:center;min-height:48px;color:rgba(var(--ink),.6);text-decoration:none;font-size:14px;letter-spacing:.04em;border-bottom:1px solid rgba(var(--ink),.2)}
+.ghost:hover{color:var(--fg);border-color:var(--fg)}
+.nav a.nl{text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:rgba(var(--ink),.6)}
+.nav a.nl:hover{color:var(--orange)}
+.nav a{white-space:nowrap}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
+.grid3>div{padding:36px 32px;border-right:1px solid var(--line)}
+.grid3>div:last-child{border-right:none}
+.num{font-family:'Bebas Neue',Impact,sans-serif;font-size:64px;line-height:1;color:var(--orange);margin-bottom:14px}
+.h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:28px;letter-spacing:.04em;line-height:1.05;margin:0 0 10px}
+.p{margin:0;color:rgba(var(--ink),.6);font-size:16px;line-height:1.75}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.apps>div{padding:34px 30px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .2s}
+.apps>div:hover{background:rgba(181,68,15,.04)}
+.tag{display:inline-block;font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.x li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line-soft);color:rgba(var(--ink),.72);font-size:16.5px;line-height:1.6}
+.x li::before{content:'×';font-family:'Bebas Neue',Impact,sans-serif;color:var(--orange);font-size:22px;line-height:1.1;flex-shrink:0}
+.chk li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid rgba(242,237,228,.1);font-size:15.5px;line-height:1.55}
+.chk li::before{content:'→';color:var(--orange);flex-shrink:0}
+.ctrl{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.ctrl>div{padding:22px 0;border-bottom:1px solid rgba(242,237,228,.12)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-weight:500;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-family:'Bebas Neue',Impact,sans-serif;font-size:30px;color:var(--orange);line-height:1}
+.faq details[open] summary::after{content:'–'}
+.faq details p{margin:0 0 24px;color:rgba(var(--ink),.62);max-width:720px}
+.foot a{text-decoration:none;color:rgba(242,237,228,.6);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.foot a:hover{color:var(--cream)}
+
+.hero-h1{font-size:clamp(64px,9vw,132px);margin:0 0 40px;line-height:.92;letter-spacing:.01em}
+.hero-h1 em{font-style:normal;color:var(--orange)}
+.lede{margin:0 0 18px;font-size:18px;color:rgba(var(--ink),.62);max-width:560px;line-height:1.8}
+.x-mark{color:var(--muted);font-size:.8em;margin:0 .15em}
+.band{background:var(--cream-dk);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dark{background:var(--panel);color:var(--cream)}
+.dark .h2,.dark .h3{color:var(--cream)}
+.sk{background:var(--panel);color:var(--cream);border-radius:4px;overflow:hidden;font-size:14px;line-height:1.55;font-weight:400;box-shadow:0 24px 50px -26px rgba(30,25,18,.5)}
+.sk b{font-weight:600}
+.sk-h{display:flex;justify-content:space-between;align-items:center;padding:13px 18px;border-bottom:1px solid rgba(242,237,228,.1);font-weight:600}
+.sk-t{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.sk-b{padding:18px;display:flex;flex-direction:column;gap:16px}
+.sk-note{margin:0;font-size:11.5px;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(242,237,228,.1);border:1px solid rgba(242,237,228,.1)}
+.kpis>div{background:var(--panel);padding:14px 14px 12px;font-size:12px;color:rgba(242,237,228,.6);line-height:1.35}
+.kpis .bebas{display:block;font-size:34px;line-height:1;color:var(--orange);margin-bottom:4px}
+.rows>div{display:grid;grid-template-columns:96px 1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(242,237,228,.08);font-size:13px}
+.rows>div:last-child{border-bottom:none}
+.rows span{color:rgba(242,237,228,.7)}
+.rows i{font-style:normal;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:3px}
+.rows i.ok{background:rgba(120,170,110,.18);color:#a8d39c}
+.rows i.warn{background:rgba(226,105,47,.2);color:#f08a58}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:48px;border:1px solid var(--line);background:var(--bg)}
+.duo>div{padding:38px 36px}
+.duo>div:first-child{border-right:1px solid var(--line)}
+.duo .chk{list-style:none;margin:16px 0 0;padding:0}
+.duo .chk li{border-bottom:1px solid var(--line-soft);color:rgba(var(--ink),.72)}
+.duo .chk li:last-child{border-bottom:none}
+.x{list-style:none}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--line);border-left:1px solid var(--line);background:var(--bg)}
+.menu .item{padding:34px 30px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+.menu .p{flex:1}
+.for{margin:18px 0 0;padding-top:14px;border-top:1px solid var(--line-soft);font-size:12.5px;font-weight:500;letter-spacing:.06em;color:var(--fg)}
+.pts{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.pts>div{padding:24px 0;border-top:1px solid var(--line)}
+.pts .h3{font-size:24px}
+.ag{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin-top:48px}
+.ag>div{border-top:1px solid rgba(242,237,228,.14);padding:26px 0 34px}
+.ag p{margin:0;color:rgba(242,237,228,.65);font-size:16px}
+.ag .n,.steps .n{display:block;font-size:40px;line-height:1;color:var(--orange);margin-bottom:12px}
+.econ{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border:1px solid var(--line);background:var(--bg)}
+.econ>div{padding:34px 30px;border-right:1px solid var(--line)}
+.econ>div:last-child{border-right:none}
+.big{font-size:clamp(44px,4.4vw,60px);line-height:1;margin:0 0 14px;color:var(--orange)}
+.big span{font-size:.38em;color:var(--muted);margin-left:6px;letter-spacing:.06em}
+.big.sm{font-size:clamp(34px,3.2vw,44px);white-space:nowrap}
+.tiles .bebas{white-space:nowrap}
+.calc{margin-top:28px;padding:28px 32px;border-left:3px solid var(--orange);background:var(--bg)}
+.calc p{margin:0;font-size:17px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin-top:48px}
+.tiles>div{border-top:3px solid var(--orange);padding-top:18px;color:rgba(242,237,228,.65);font-size:15px}
+.tiles .bebas{display:block;font-size:clamp(48px,5vw,72px);line-height:1;color:var(--cream);margin-bottom:8px}
+.fine{margin:28px 0 0;font-size:12.5px;color:var(--muted);max-width:720px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:48px}
+.steps>div{border-top:1px solid var(--line);padding-top:22px}
+.steps .h3{font-size:24px}
+.people{display:flex;justify-content:center;gap:64px;flex-wrap:wrap;margin-top:56px;padding-top:36px;border-top:1px solid rgba(242,237,228,.12)}
+.people>div{display:flex;flex-direction:column;gap:2px;font-size:15px}
+.people b{font-weight:600;font-size:17px}
+.people span{color:var(--muted);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.people a{color:rgba(242,237,228,.8);text-decoration:none}
+.people a:hover{color:var(--orange)}
+@media (max-width:1100px){.nav .links{display:none !important}}
+@media (max-width:900px){
+ .wrap{padding:0 20px}.sec{padding:72px 0}
+ .two{grid-template-columns:1fr !important;gap:48px !important}
+ .duo,.menu,.econ,.tiles,.ag,.pts{grid-template-columns:1fr}
+ .duo>div:first-child{border-right:none;border-bottom:1px solid var(--line)}
+ .econ>div{border-right:none;border-bottom:1px solid var(--line)}
+ .econ>div:last-child{border-bottom:none}
+ .tiles{gap:32px}
+ .steps{grid-template-columns:1fr 1fr;gap:28px 24px}
+ .nav .logo{font-size:20px !important}
+ .nav .btn{padding:10px 14px !important;font-size:11.5px !important}
+ .nav .acts{gap:12px !important}
+ .foot .wrap{padding:28px 20px !important}
+}
+@media (max-width:520px){.nav .logo{font-size:18px !important}.nav .theme-btn{display:none}.nav .btn{padding:9px 11px !important;font-size:10.5px !important}.steps{grid-template-columns:1fr}.rows>div{grid-template-columns:80px 1fr auto;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="sl">
+
+<header class="nav" style="position:sticky;top:0;z-index:5;background:rgba(var(--bg-rgb),.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px">
+    <a href="#top" class="bebas logo" style="text-decoration:none;font-size:28px;letter-spacing:.04em;line-height:1">SMB <span style="color:var(--orange)">Lab</span> <span class="x-mark">×</span> Raynmaker</a>
+    <nav class="links" aria-label="Page" style="display:flex;gap:28px">
+      <a class="nl" href="#offer">What you sell</a>
+      <a class="nl" href="#franchisors">Franchisors</a>
+      <a class="nl" href="#agencies">Agencies</a>
+      <a class="nl" href="#economics">Economics</a>
+      <a class="nl" href="#start">How we start</a>
+    </nav>
+    <div class="acts" style="display:flex;align-items:center;gap:22px">
+      <button type="button" class="theme-btn" data-theme-toggle aria-label="Switch light or dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <a class="btn" href="#talk" style="padding:12px 22px;min-height:44px;font-size:12.5px">Let's talk</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="padding:96px 0 104px">
+  <div class="wrap">
+    <p class="label">Partner program · For franchisors &amp; agencies</p>
+    <h1 class="bebas hero-h1">Your Leads Are Good.<br><em>Let's Prove It.</em></h1>
+    <div class="two" style="display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:start">
+      <div>
+        <p class="bebas" style="margin:0 0 22px;font-size:clamp(28px,2.8vw,38px);line-height:1.08;letter-spacing:.03em">Put an AI sales team behind every location and every client you serve. <span style="color:var(--orange)">Under your name.</span></p>
+        <p class="lede">You already do the hard part: you bring the leads. What happens next decides whether your franchisees grow and whether your clients stay. Raynmaker and SMB Lab put an AI sales team in that gap: it answers every lead in a minute, follows up on every quote, picks up every call and tells each team who to work first every morning.</p>
+        <p class="lede">You offer it as your own product, set your own prices and keep the margin. Every location books more, and you can finally show what your leads were worth all along.</p>
+        <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:36px">
+          <a class="btn" href="#talk">Plan a pilot with us</a>
+          <a class="ghost" href="#economics">See the economics</a>
+        </div>
+      </div>
+      <div class="sk">
+        <div class="sk-h"><span>Network view</span><span class="sk-t">This week · 24 locations</span></div>
+        <div class="sk-b">
+          <div class="kpis">
+            <div><span class="bebas">58s</span>Median reply to a new lead</div>
+            <div><span class="bebas">100%</span>Quotes with a personal follow-up</div>
+            <div><span class="bebas">4,812</span>Touches sent by the AI team</div>
+            <div><span class="bebas">3</span>Locations that need a nudge</div>
+          </div>
+          <div class="rows">
+            <div><b>Westminster</b><span>Booked 31% of quoted leads</span><i class="ok">On pace</i></div>
+            <div><b>Aurora</b><span>Calls back 9 of 10 leads same day</span><i class="ok">On pace</i></div>
+            <div><b>Littleton</b><span>Leads up 22%, bookings flat</span><i class="warn">Coach</i></div>
+            <div><b>Parker</b><span>14 quotes waiting on a callback</span><i class="warn">Today</i></div>
+          </div>
+          <p class="sk-note">Illustrative example of the corporate and agency view.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO DOES WHAT -->
+<section id="collab" class="sec band">
+  <div class="wrap">
+    <p class="label">The collaboration</p>
+    <h2 class="h2">Two Teams. <em>One Offer.</em></h2>
+    <p class="intro">You get one partner, one rollout and one bill. Behind it, each company does what it does best.</p>
+    <div class="duo">
+      <div>
+        <p class="tag">Raynmaker · The voice</p>
+        <h3 class="h3">Every Call Answered. Every Old Lead Worked.</h3>
+        <ul class="chk">
+          <li>Inbound answering on the first ring, 24/7, in each brand's voice</li>
+          <li>Outbound voice that texts, then calls, old and unbooked leads and hands the ready ones to a person</li>
+          <li>Your partner team: scoping, rollout and the relationship with your network</li>
+        </ul>
+      </div>
+      <div>
+        <p class="tag">SMB Lab · The sales layer</p>
+        <h3 class="h3">The Sales Team Behind Every Sales Team.</h3>
+        <ul class="chk">
+          <li>AI agents that answer leads, follow up on quotes, write call notes and keep the CRM current</li>
+          <li>A morning brief, call coaching and scoreboards for every location</li>
+          <li>The agency platform: white label, one view of every account, and billing you control</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE GAP -->
+<section class="sec">
+  <div class="wrap">
+    <div class="two" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start">
+      <div>
+        <p class="label">Where the money goes</p>
+        <h2 class="h2">The Lead Isn't The Problem. <em>The Next Hour Is.</em></h2>
+        <p class="intro">Most missed revenue happens between a lead arriving and a person being free to work it. In a busy location, that's every day.</p>
+      </div>
+      <ul class="x" style="list-style:none;margin:0;padding:0">
+        <li>A new lead waits hours for a reply, and books with whoever called first.</li>
+        <li>A quote goes out and nobody follows up after the second try.</li>
+        <li>The phone rings during a job and the caller never tries again.</li>
+        <li>Corporate can't see which locations are working their leads and which aren't.</li>
+        <li>When bookings slip, the lead source gets the blame, and the client starts shopping for a new agency.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- THE OFFER -->
+<section id="offer" class="sec band">
+  <div class="wrap">
+    <p class="label">What you can sell</p>
+    <h2 class="h2">A Menu Built For <em>Every Location.</em></h2>
+    <p class="intro">Start each location where it hurts most and add more as they grow. Every message can send on its own or wait for a person's OK.</p>
+    <div class="menu">
+      <div class="item">
+        <p class="tag">Sales layer · Starter</p>
+        <h3 class="h3">Answer Every Lead</h3>
+        <p class="p">New leads answered within a minute, call notes and personal follow-up, CRM records kept current, booking confirmations and reminders, and a morning brief.</p>
+        <p class="for">For owner-operators and small teams</p>
+      </div>
+      <div class="item">
+        <p class="tag">Sales layer · Growth</p>
+        <h3 class="h3">Close Every Quote</h3>
+        <p class="p">Everything in Starter plus 30-day personal quote follow-up, long-term nurture, call scoring and coaching against your call flow, daily scoreboards and monthly promos.</p>
+        <p class="for">For locations with a sales team in place</p>
+      </div>
+      <div class="item">
+        <p class="tag">Sales layer · Pro</p>
+        <h3 class="h3">Run The Whole Day</h3>
+        <p class="p">Everything in Growth plus specialized agents like dispatch and scheduling, and an expanded usage allowance.</p>
+        <p class="for">For multi-crew and field-service operators</p>
+      </div>
+      <div class="item">
+        <p class="tag">Raynmaker · Inbound</p>
+        <h3 class="h3">Every Call Answered</h3>
+        <p class="p">The phone gets answered on the first ring around the clock. It holds the conversation, captures what the team needs and hands off when your rules say so. Transcripts, summaries and recordings land in the portal.</p>
+        <p class="for">From $100/mo with 100 minutes, then $0.30/min</p>
+      </div>
+      <div class="item">
+        <p class="tag">Raynmaker · Outbound</p>
+        <h3 class="h3">Old Leads, Back On The Calendar</h3>
+        <p class="p">Texts first, then calls, as part of the team. Finds the people ready to talk, then transfers them live or texts a booking link. Fires by API the moment a rep is free.</p>
+        <p class="for">Scoped to lead volume, starts as a pilot</p>
+      </div>
+      <div class="item">
+        <p class="tag">Included everywhere</p>
+        <h3 class="h3">Works With What They Run</h3>
+        <p class="p">One-click connect for GoHighLevel through our Marketplace app. Also HubSpot, Zoho, Salesforce, Pipedrive, Jobber, Dialpad, OpenPhone, Gmail, Outlook, Fathom and Fireflies.</p>
+        <p class="for">GoHighLevel fully supported today</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRANCHISORS -->
+<section id="franchisors" class="sec">
+  <div class="wrap">
+    <div class="two" style="display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start">
+      <div>
+        <p class="label">For franchisors</p>
+        <h2 class="h2">Every Location Runs <em>Your Playbook.</em></h2>
+        <p class="intro">Your best location's habits, in every location, from day one. And for the first time, you can see exactly how each one handles the leads you send it.</p>
+      </div>
+      <div class="pts">
+        <div><h3 class="h3">One View Of The Whole Network</h3><p class="p">See speed to lead, follow-up and bookings for every location side by side. Know who's on pace and who needs a call this week.</p></div>
+        <div><h3 class="h3">Your Call Flow, Coached Daily</h3><p class="p">Every recorded call is scored against the corporate call flow. Reps get a daily recap, owners get the overview, corporate gets the trend.</p></div>
+        <div><h3 class="h3">Brand Voice, Locked</h3><p class="p">Set approved wording once. Booking confirmations and key messages never drift, in any location.</p></div>
+        <div><h3 class="h3">New Franchisees Ramp Faster</h3><p class="p">A new location gets a seasoned sales team on its first day: every lead answered, every quote followed up, a plan every morning.</p></div>
+        <div><h3 class="h3">Start On Corporate</h3><p class="p">Prove it on your corporate locations first, then roll it out to franchisees with the numbers in hand.</p></div>
+        <div><h3 class="h3">Each Location's Data Stays Separate</h3><p class="p">Every location keeps its own CRM and its own records. Corporate sees the view you choose.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENCIES -->
+<section id="agencies" class="sec dark">
+  <div class="wrap">
+    <p class="label">For agencies</p>
+    <h2 class="h2" style="max-width:900px">Stop Losing Clients <em>Over Leads You Did Your Job On.</em></h2>
+    <p class="intro" style="color:rgba(242,237,228,.65)">When a client doesn't close, the ads get the blame. Now you can show what really happened, fix it for them, and get paid for the fix.</p>
+    <div class="ag">
+      <div><span class="bebas n">01</span><h3 class="h3">Prove Lead Quality In One Click</h3><p>A one-page report for any client: new leads per week, calls made, speed to lead and touches per lead, benchmarked against best practices drawn from an operation handling 75,000+ leads a year.</p></div>
+      <div><span class="bebas n">02</span><h3 class="h3">Your Brand, Not Ours</h3><p>The whole portal takes on your colors and logo. Pull them from your website, or upload a screenshot or brand guide.</p></div>
+      <div><span class="bebas n">03</span><h3 class="h3">Your Prices, Your Margin</h3><p>Connect your own Stripe. Set your price per client account, offer annual plans if you want, and keep the difference.</p></div>
+      <div><span class="bebas n">04</span><h3 class="h3">Every Account In One Place</h3><p>See every client's plan, pricing, activity and usage on one screen. Add owners and users for any account.</p></div>
+      <div><span class="bebas n">05</span><h3 class="h3">One-Click Onboarding</h3><p>Clients on GoHighLevel connect through our Marketplace app in a click. No API keys, no workflows to build.</p></div>
+      <div><span class="bebas n">06</span><h3 class="h3">Clients Who Stay</h3><p>Clients who book more renew. Clients who can see the work being done don't go shopping.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ECONOMICS -->
+<section id="economics" class="sec band">
+  <div class="wrap">
+    <p class="label">Partner economics</p>
+    <h2 class="h2">Wholesale In. <em>Your Price Out.</em></h2>
+    <p class="intro">You buy at partner rates and sell at whatever price fits your network. Our suggested retail sits at or below SMB Lab's own direct prices, so your clients never find it cheaper elsewhere.</p>
+    <div class="econ">
+      <div>
+        <p class="tag">You pay</p>
+        <p class="big bebas">$59<span>/location/mo</span></p>
+        <p class="p">Starter wholesale. Growth and Pro wholesale set per partner. Annual plans get an additional wholesale discount.</p>
+      </div>
+      <div>
+        <p class="tag">AI usage</p>
+        <p class="big bebas">1.25×<span>cost</span></p>
+        <p class="p">Usage billed to you at 1.25× our raw cost. Resell it at the rate you choose; we suggest 1.5×.</p>
+      </div>
+      <div>
+        <p class="tag">Suggested retail</p>
+        <p class="big bebas sm">$99 · $299 · $599+</p>
+        <p class="p">Starter, Growth and Pro per month, billed yearly. The same prices SMB Lab charges direct.</p>
+      </div>
+    </div>
+    <div class="calc">
+      <p class="label" style="margin-bottom:10px">Example</p>
+      <p><b>40 locations on Starter</b> at the suggested $99 is <b>$3,960 a month</b> billed to your network. At $59 wholesale, <b>$1,600 a month stays with you</b> before any usage margin, Growth upgrades or voice add-ons.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="sec dark">
+  <div class="wrap">
+    <p class="label">What it did for an operator like yours</p>
+    <h2 class="h2">Same Leads. Same Team. <em>Different Results.</em></h2>
+    <p class="intro" style="color:rgba(242,237,228,.65)">A Denver in-home service business turned on the sales layer in August 2026.</p>
+    <div class="tiles">
+      <div><span class="bebas">13% → 50%</span>Of quoted leads who booked</div>
+      <div><span class="bebas">3.9×</span>Contract value won a month, August to October</div>
+      <div><span class="bebas">−47%</span>Cost to win a customer ($370 → $195)</div>
+    </div>
+    <p class="fine">August to October 2026, from a small number of sales, with other parts of the business improving in the same stretch.</p>
+  </div>
+</section>
+
+<!-- CONTROL -->
+<section class="sec">
+  <div class="wrap">
+    <div class="two" style="display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start">
+      <div>
+        <p class="label">Everyone stays in control</p>
+        <h2 class="h2">Automatic When They're Ready. <em>Approval Until Then.</em></h2>
+        <p class="intro">Each location starts with more control and turns on automation as confidence builds.</p>
+      </div>
+      <div class="pts">
+        <div><h3 class="h3">Send Or Ask First</h3><p class="p">Every agent runs automatically or waits for a person's OK. Each location picks.</p></div>
+        <div><h3 class="h3">Hours &amp; Opt-Outs</h3><p class="p">Texts only go out in business hours. Anyone who opted out is left out.</p></div>
+        <div><h3 class="h3">Pause Anytime</h3><p class="p">One button stops every message until someone turns it back on.</p></div>
+        <div><h3 class="h3">Try It First</h3><p class="p">Run any agent on sample customers and see what it would write before it touches a real one.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE START -->
+<section id="start" class="sec band">
+  <div class="wrap">
+    <p class="label">How we start</p>
+    <h2 class="h2">A Focused Pilot. <em>Then Roll Out.</em></h2>
+    <div class="steps">
+      <div><span class="bebas n">1</span><h3 class="h3">Pick The Locations</h3><p class="p">Your corporate locations or a handful of clients, plus one batch of unbooked leads for outbound.</p></div>
+      <div><span class="bebas n">2</span><h3 class="h3">Connect In A Day</h3><p class="p">One click for GoHighLevel. We load each brand's voice, call flow and approved wording.</p></div>
+      <div><span class="bebas n">3</span><h3 class="h3">Tune Together</h3><p class="p">About two weeks running with approval on, side by side with your team, adjusting as we go.</p></div>
+      <div><span class="bebas n">4</span><h3 class="h3">Measure &amp; Decide</h3><p class="p">Speed to lead, leads reached, appointments booked and show rate, against today's numbers. Then we roll out.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TALK -->
+<section id="talk" class="dark" style="padding:104px 0">
+  <div class="wrap" style="text-align:center">
+    <p class="label" style="justify-content:center">Let's talk</p>
+    <h2 class="bebas" style="margin:0 auto 22px;font-size:clamp(52px,6.5vw,92px);line-height:.95;max-width:960px">Put A Sales Team<br><span style="color:var(--orange)">Behind Every Location.</span></h2>
+    <p style="margin:0 auto 40px;max-width:580px;color:rgba(242,237,228,.65);font-size:18px">30 minutes. Tell us about your network and we'll size a pilot around it.</p>
+    <a class="btn" href="https://api.leadconnectorhq.com/widget/booking/8GIwtKfYL77ZE2NBCdYt" target="_blank" rel="noopener">Book a call</a>
+    <div class="people">
+      <div><b>Garth Fasano</b><span>Founder, SMB Lab</span><a href="mailto:garth@joinsmblab.com">garth@joinsmblab.com</a></div>
+      <div><b>Andrew Rowe</b><span>Raynmaker</span><a href="mailto:andrew@raynmaker.ai">andrew@raynmaker.ai</a><a href="tel:+16174606964">(617) 460-6964</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" style="background:var(--panel);color:var(--cream);border-top:1px solid rgba(242,237,228,.1)">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding:32px 48px">
+    <span class="bebas" style="font-size:24px;letter-spacing:.04em">SMB <span style="color:var(--orange)">Lab</span> <span class="x-mark">×</span> Raynmaker <span style="font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:0;color:rgba(242,237,228,.45);margin-left:10px">© 2026</span></span>
+    <nav aria-label="Footer" style="display:flex;gap:26px;flex-wrap:wrap">
+      <a href="/">SMB Lab</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</footer>
+</div>
+<script>document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var r=document.documentElement,cur=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'),next=cur==='dark'?'light':'dark';r.setAttribute('data-theme',next);try{localStorage.setItem('theme',next)}catch(e){}})})</script>
+</body>
+</html>
