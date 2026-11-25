@@ -99,6 +99,14 @@ body{margin:0;background:#fff}
 .calc{margin-top:28px;padding:26px 32px;border-left:4px solid var(--lime);background:#fff;border-radius:0 6px 6px 0}
 .calc p{margin:0;font-size:17.5px}
 .calc .label{margin-bottom:10px}
+.prices{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border:1px solid var(--border);background:#fff;border-radius:6px;overflow:hidden}
+.prices>div{padding:32px 28px;border-right:1px solid var(--border);display:flex;flex-direction:column}
+.prices>div:last-child{border-right:none}
+.prices .partner{background:var(--navy);color:#fff}
+.prices .partner .tag{color:var(--lime)}.prices .partner .big{color:#fff}.prices .partner .p{color:rgba(255,255,255,.7)}.prices .partner .mo{color:var(--peri)}
+.mo{margin:-6px 0 16px;font-family:var(--sans);font-size:12.5px;font-weight:500;color:var(--ink-dim)}
+@media (max-width:1100px){.prices{grid-template-columns:1fr 1fr}.prices>div:nth-child(2){border-right:none}.prices>div:nth-child(-n+2){border-bottom:1px solid var(--border)}}
+@media (max-width:600px){.prices{grid-template-columns:1fr}.prices>div{border-right:none;border-bottom:1px solid var(--border)}}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin-top:48px}
 .tiles>div{border-top:3px solid var(--lime);padding-top:18px;color:rgba(255,255,255,.68);font-size:15.5px}
 .tiles .num{display:block;font-family:var(--serif);font-weight:500;letter-spacing:-.02em;font-size:clamp(44px,4.6vw,64px);line-height:1.05;color:#fff;margin-bottom:8px;white-space:nowrap}
@@ -144,6 +152,7 @@ body{margin:0;background:#fff}
       <a class="nl" href="#offer">What you sell</a>
       <a class="nl" href="#franchisors">Franchisors</a>
       <a class="nl" href="#agencies">Agencies</a>
+      <a class="nl" href="#pricing">Pricing</a>
       <a class="nl" href="#start">How we start</a>
     </nav>
     <div class="acts" style="display:flex;align-items:center;gap:22px">
@@ -311,6 +320,43 @@ body{margin:0;background:#fff}
       <div><span class="n">05</span><h3 class="h3">One-click onboarding</h3><p>Clients on GoHighLevel connect through our Marketplace app in a click. No API keys, no workflows to build.</p></div>
       <div><span class="n">06</span><h3 class="h3">Clients who stay</h3><p>Clients who book more renew. Clients who can see the work being done don't go shopping.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="sec band">
+  <div class="wrap">
+    <p class="label">Pricing</p>
+    <h2 class="h2">Simple plans. <em>Partner terms on request.</em></h2>
+    <p class="intro">Every plan includes the client portal, chat with the AI team and setup help. Free guided setup, or $149 and we set it up for you.</p>
+    <div class="prices">
+      <div>
+        <p class="tag">Starter</p>
+        <p class="big">$99<span>/mo</span></p>
+        <p class="mo">$119/mo billed monthly</p>
+        <p class="p">Every lead answered in a minute, call notes and follow-up, CRM kept current, booking confirmations and the morning brief.</p>
+      </div>
+      <div>
+        <p class="tag">Growth · Most popular</p>
+        <p class="big">$299<span>/mo</span></p>
+        <p class="mo">$359/mo billed monthly</p>
+        <p class="p">Everything in Starter plus 30-day quote follow-up, nurture, call coaching, scoreboards and monthly promos.</p>
+      </div>
+      <div>
+        <p class="tag">Pro</p>
+        <p class="big">$599+<span>/mo</span></p>
+        <p class="mo">$719+/mo billed monthly</p>
+        <p class="p">Everything in Growth plus specialized agents like dispatch and scheduling, with an expanded usage allowance.</p>
+      </div>
+      <div class="partner">
+        <p class="tag">Agencies &amp; franchisors</p>
+        <p class="big">Let's talk</p>
+        <p class="mo">Partner pricing for your network</p>
+        <p class="p">White label, one view of every account, and your own prices for each client or location.</p>
+        <a class="btn" href="#talk" style="margin-top:22px;align-self:flex-start">Talk to us</a>
+      </div>
+    </div>
+    <p class="fine" style="color:var(--ink-muted)">Prices per location, per month, billed yearly. Additional AI usage billed as you go, with a spending limit you set.</p>
   </div>
 </section>
 
